@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Aspen LinkedIn — August 2026 Feed Preview</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;background:#f4f2ee;color:#1f2124}
+.hero{background:linear-gradient(160deg,#0f1c14 0%,#1f2124 70%);padding:44px 20px 38px;color:#fff}
+.hero-in{max-width:760px;margin:0 auto}
+.eyebrow{font-size:11px;font-weight:700;letter-spacing:3px;color:#8fce56;text-transform:uppercase;margin-bottom:12px}
+.hero h1{font-size:32px;font-weight:800;letter-spacing:-0.6px;line-height:1.1;margin-bottom:10px}
+.hero .sub{font-size:14.5px;color:#c9d4c3;max-width:640px;line-height:1.55}
+.meta{display:flex;flex-wrap:wrap;gap:22px;margin-top:22px}
+.mp{display:flex;flex-direction:column}
+.mp .l{font-size:10px;font-weight:700;color:#7a8a72;letter-spacing:1.5px;text-transform:uppercase}
+.mp .v{font-size:14px;font-weight:700;margin-top:3px;color:#fff}
+.notes{max-width:760px;margin:26px auto 0;padding:0 20px}
+.nbox{background:#fff;border:1px solid #e0ddd6;border-left:4px solid #2E7D32;border-radius:10px;padding:18px 22px;margin-bottom:12px}
+.nbox .nt{font-size:11px;font-weight:800;letter-spacing:1.6px;color:#2E7D32;text-transform:uppercase;margin-bottom:8px}
+.nbox ul{padding-left:18px;font-size:13.5px;color:#3d4238;line-height:1.7}
+.feed{max-width:560px;margin:30px auto 0;padding:0 10px}
+.datechip{display:flex;align-items:center;gap:10px;margin:26px 2px 8px}
+.dc-date{font-size:12px;font-weight:800;letter-spacing:1px;text-transform:uppercase;color:#4a5245;background:#e9e6de;padding:4px 10px;border-radius:20px}
+.dc-kind{font-size:11.5px;color:#7a8272;font-weight:600}
+.card{background:#fff;border:1px solid #e0ddd6;border-radius:10px;overflow:hidden;box-shadow:0 1px 2px rgba(0,0,0,0.05)}
+.reshare-line{font-size:12px;color:#666;padding:10px 16px 0;font-weight:600}
+.head{display:flex;align-items:flex-start;gap:10px;padding:14px 16px 8px}
+.av{width:48px;height:48px;border-radius:50%;object-fit:cover;flex-shrink:0}
+.av-aspen{background:transparent}.av-aspen svg{width:48px;height:48px}
+.av-init{background:#1f3a5c;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:16px}
+.who{display:flex;flex-direction:column;min-width:0;flex:1}
+.nm{font-size:14px;font-weight:700;color:#1f2124;line-height:1.25}
+.tg{font-size:12px;color:#666;line-height:1.3;margin-top:1px}
+.tm{font-size:12px;color:#888;margin-top:2px}
+.fol{color:#0a66c2;font-size:13.5px;font-weight:700;white-space:nowrap;padding-top:2px}
+.cap{font-size:14px;line-height:1.5;color:#1f2124;white-space:pre-wrap;padding:6px 16px 4px;overflow-wrap:break-word}
+.cap.clamp{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3;overflow:hidden}
+.cap .tag{color:#0a66c2;font-weight:600}
+.more{display:inline-block;color:#666;font-size:13.5px;font-weight:600;cursor:pointer;margin:0 16px 8px;user-select:none}
+.more:hover{color:#0a66c2;text-decoration:underline}
+.media{background:#000;position:relative}
+.media img,.media video{width:100%;display:block}
+.carousel .cfr{display:none}.carousel .cfr.on{display:block}
+.cnav{position:absolute;top:50%;transform:translateY(-50%);width:40px;height:40px;border-radius:50%;border:none;background:rgba(255,255,255,0.92);color:#1f2124;font-size:16px;cursor:pointer;box-shadow:0 1px 6px rgba(0,0,0,0.35);display:flex;align-items:center;justify-content:center}
+.cnav.prev{left:10px}.cnav.next{right:10px}.cnav:hover{background:#fff}
+.ccount{position:absolute;top:12px;right:12px;background:rgba(0,0,0,0.7);color:#fff;font-size:12px;font-weight:700;padding:3px 10px;border-radius:12px}
+.cdots{position:absolute;bottom:10px;left:0;right:0;display:flex;justify-content:center;gap:6px}
+.dot{width:7px;height:7px;border-radius:50%;background:rgba(255,255,255,0.45);cursor:pointer}
+.dot.on{background:#fff}
+.vmock{aspect-ratio:4/5;background:radial-gradient(ellipse at 65% 30%,#1c2f4a 0%,#0d1526 65%);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:20px;position:relative;overflow:hidden}
+.vmock-chip{position:absolute;top:12px;left:12px;background:rgba(245,180,84,0.95);color:#231a06;font-size:10.5px;font-weight:800;letter-spacing:1.2px;text-transform:uppercase;padding:5px 10px;border-radius:4px}
+.vmock-face{width:130px;height:130px;border-radius:50%;background:#27405f;display:flex;align-items:center;justify-content:center;color:#fff;font-size:38px;font-weight:800;overflow:hidden;border:3px solid rgba(255,255,255,0.25)}
+.vmock-face img{width:100%;height:100%;object-fit:cover}
+.vmock-wave{display:flex;align-items:center;gap:3px;height:30px}
+.vmock-wave i{width:3.5px;background:#5aa8ff;border-radius:2px;animation:wv 1.1s ease-in-out infinite}
+@keyframes wv{0%,100%{height:8px}50%{height:26px}}
+.vmock-overlay{position:absolute;bottom:0;left:0;right:0;padding:18px 20px;background:linear-gradient(to top,rgba(0,0,0,0.85),transparent);color:#fff;font-size:14.5px;font-weight:700;line-height:1.4}
+.vmock-overlay small{display:block;font-size:11px;font-weight:600;color:#b8c8dc;margin-top:6px}
+.smock{aspect-ratio:4/5;background:radial-gradient(ellipse at 30% 20%,#16301c 0%,#0e1b12 70%);display:flex;flex-direction:column;align-items:center;justify-content:center;position:relative;overflow:hidden;padding:36px}
+.smock-chip{position:absolute;top:12px;left:12px;background:rgba(245,180,84,0.95);color:#231a06;font-size:10.5px;font-weight:800;letter-spacing:1.2px;text-transform:uppercase;padding:5px 10px;border-radius:4px}
+.smock-line{color:#fff;font-size:20px;font-weight:800;line-height:1.45;text-align:center;max-width:400px}
+.smock-brand{position:absolute;bottom:16px;right:18px;color:#8fce56;font-size:10.5px;font-weight:800;letter-spacing:2px;text-transform:uppercase}
+.acts{display:flex;justify-content:space-around;padding:8px 8px;border-top:1px solid #eee}
+.act{font-size:13px;color:#555;font-weight:600;padding:8px 10px;border-radius:6px}
+.act:hover{background:#f2f0ea}
+.review{display:flex;align-items:center;flex-wrap:wrap;gap:8px;padding:10px 4px 0}
+.rnote{font-size:12px;color:#8a6d1f;background:#fdf6e3;border:1px solid #f0e3b8;border-radius:6px;padding:7px 10px;line-height:1.45;flex-basis:100%}
+.footer{text-align:center;font-size:12px;color:#8a9182;padding:34px 16px 60px;line-height:1.6}
+@media (max-width:620px){.hero h1{font-size:24px}}
+</style>
+</head>
+<body>
+<div class="hero"><div class="hero-in">
+  <div class="eyebrow">Aspen Claims Service &middot; LinkedIn</div>
+  <h1>August 2026 &mdash; the feed, as it will run</h1>
+  <div class="sub">Every post below is shown the way it will appear in the LinkedIn feed &mdash; final creatives where they exist, full captions verbatim from the approved calendar, correct posting profile. Scroll like you would scroll LinkedIn. Tap &ldquo;see more&rdquo; to read any caption in full, and use the arrows on the two carousels.</div>
+  <div class="meta">
+    <div class="mp"><span class="l">Window</span><span class="v">10 Aug &ndash; 4 Sep</span></div>
+    <div class="mp"><span class="l">Posts</span><span class="v">12 (+2 page reshares)</span></div>
+    <div class="mp"><span class="l">Mix</span><span class="v">4 static &middot; 2 quote card &middot; 2 carousel &middot; 2 video &middot; 2 long-form</span></div>
+    <div class="mp"><span class="l">Cadence</span><span class="v">Mon &middot; Wed &middot; Fri</span></div>
+  </div>
+</div></div>
+<div class="notes">
+  <div class="nbox"><div class="nt">Before this window opens</div>
+    <ul>
+      <li><b>Dates are the Mon/Wed/Fri rhythm anchored to Planable</b> &mdash; Post 1 sits at 10 Aug and Post 2 at 12 Aug in Planable today; the rest follow the cadence from there. Confirm before scheduling.</li>
+      <li><b>July catch-up runs first</b> &mdash; four July posts finish 3&ndash;6 Aug, and Mark&rsquo;s pricing VO sits at 11 Aug in Planable, just before this window.</li>
+      <li><b>Hashtags are shown verbatim from the calendar</b> and still lead with branded tags (#ClaimsWithAspen, #ClaimsIntelligence, #AspenVoices). Playbook is 3 industry tags &mdash; worth one pass with Simran before anything goes live.</li>
+      <li><b>Still in production:</b> Post 1 and Post 5 statics, both VO videos (24 Aug Mark, 4 Sep Brent), and a reshare card for Brent&rsquo;s article. Placeholders below show the approved direction.</li>
+    </ul>
+  </div>
+</div>
+<div class="feed">
+
+<div class="post-wrap" id="p1">
+  <div class="datechip"><span class="dc-date">Mon · 10 Aug</span><span class="dc-kind">Static · The first three days — creative in production</span></div>
+  <div class="card">
+    <div class="head"><div class="av av-aspen"><svg viewBox="0 0 36 36"><circle cx="18" cy="18" r="17" fill="#0e1b12" stroke="#5F9828" stroke-width="2"/><path d="M8 24 L16 11 L21 18 L24 14 L28 24 Z" fill="#5F9828"/></svg></div>
+      <div class="who"><span class="nm">Aspen Claims Service</span><span class="tg">Property Claims Services</span><span class="tm">Scheduled &middot; 10 Aug &#127760;</span></div>
+      <div class="fol">+ Follow</div>
+    </div>
+    <div class="cap clamp" id="cap-p1">A pattern from this year's file-quality data worth flagging.
+
+Across a broad sample of property claims, the gap that most consistently predicts downstream problems isn't in the inspection or the settlement. It's in the three days between when a claim is filed and when the adjuster actually reaches the property.
+
+When that window is tight, files tend to close cleanly and stay closed. When it stretches, three things start to happen — none of them good.
+
+The insured starts calling to ask what's happening. Trust erodes before the adjuster has even arrived.
+
+Damage evolves. Water spreads. Smoke residue sets. Contents get moved. The condition captured at inspection isn't the condition of the original loss.
+
+Documentation from other sources arrives first. Contractors, public adjusters, or the insured's own photos start shaping the narrative before the adjuster has assessed it independently.
+
+None of this is dramatic on any single file. Compounded across a book of claims, it's the difference between a program that runs steadily and one that spends its year chasing supplements.
+
+The vendors who win on cycle time in the middle of the process usually built the win into the first three days.
+
+<span class="tag">#ClaimsWithAspen</span> <span class="tag">#ClaimsIntelligence</span> <span class="tag">#ClaimsOperations</span></div>
+    <span class="more" data-t="cap-p1">&hellip;see more</span>
+    <div class="media"><div class="smock"><div class="smock-chip">Creative in production &middot; Static</div><div class="smock-line">&ldquo;The vendors who win on cycle time in the middle of the process usually built the win into the first three days.&rdquo;</div><div class="smock-brand">Aspen Claims Service</div></div></div>
+    <div class="acts">
+      <span class="act">&#128077; Like</span><span class="act">&#128172; Comment</span><span class="act">&#128257; Repost</span><span class="act">&#10148; Send</span>
+    </div>
+  </div>
+  <div class="review"><div class="rnote">&#9998; Static not yet delivered &mdash; the placeholder carries the approved copy line.</div></div>
+</div>
+
+<div class="post-wrap" id="p2">
+  <div class="datechip"><span class="dc-date">Wed · 12 Aug</span><span class="dc-kind">Carousel · Part 05 — series finale of How Claims Actually Work</span></div>
+  <div class="card">
+    <div class="head"><div class="av av-aspen"><svg viewBox="0 0 36 36"><circle cx="18" cy="18" r="17" fill="#0e1b12" stroke="#5F9828" stroke-width="2"/><path d="M8 24 L16 11 L21 18 L24 14 L28 24 Z" fill="#5F9828"/></svg></div>
+      <div class="who"><span class="nm">Aspen Claims Service</span><span class="tg">Property Claims Services</span><span class="tm">Scheduled &middot; 12 Aug &#127760;</span></div>
+      <div class="fol">+ Follow</div>
+    </div>
+    <div class="cap clamp" id="cap-p2">The end of a claim is quieter than the beginning. There's no phone call announcing that the file is closed, no envelope in the mail with a red stamp. For most policyholders, the closing is the moment they realize the payment has cleared and no one has followed up.
+
+That's a system working — but it deserves a bit more explanation than it usually gets.
+
+Part 05 of our series on how claims actually work. This is the finale — we'll be starting something new next week.
+
+<span class="tag">#ClaimsWithAspen</span> <span class="tag">#InsuranceClaims</span> <span class="tag">#PropertyClaims</span></div>
+    <span class="more" data-t="cap-p2">&hellip;see more</span>
+    <div class="media carousel" data-n="6"><img class="cfr on" data-i="0" src="assets/carousel_12aug_f1.jpg" alt="frame 1"/><img class="cfr" data-i="1" src="assets/carousel_12aug_f2.jpg" alt="frame 2"/><img class="cfr" data-i="2" src="assets/carousel_12aug_f3.jpg" alt="frame 3"/><img class="cfr" data-i="3" src="assets/carousel_12aug_f4.jpg" alt="frame 4"/><img class="cfr" data-i="4" src="assets/carousel_12aug_f5.jpg" alt="frame 5"/><img class="cfr" data-i="5" src="assets/carousel_12aug_f6.jpg" alt="frame 6"/><button class="cnav prev" aria-label="previous">&#10094;</button><button class="cnav next" aria-label="next">&#10095;</button><span class="ccount">1/6</span><div class="cdots"><span class="dot on" data-i="0"></span><span class="dot" data-i="1"></span><span class="dot" data-i="2"></span><span class="dot" data-i="3"></span><span class="dot" data-i="4"></span><span class="dot" data-i="5"></span></div></div>
+    <div class="acts">
+      <span class="act">&#128077; Like</span><span class="act">&#128172; Comment</span><span class="act">&#128257; Repost</span><span class="act">&#10148; Send</span>
+    </div>
+  </div>
+  <div class="review"><div class="rnote">&#9998; Caption promises the new series &ldquo;next week&rdquo; &mdash; Behind the File Part 01 lands 28 Aug, two weeks later. Soften the line or pull the opener forward.</div></div>
+</div>
+
+<div class="post-wrap" id="p3">
+  <div class="datechip"><span class="dc-date">Fri · 14 Aug</span><span class="dc-kind">Mark POV · quote card · Mark&#x27;s profile</span></div>
+  <div class="card">
+    <div class="head"><img class="av" src="assets/mark_avatar.jpg" alt="Mark Vetrovec"/>
+      <div class="who"><span class="nm">Mark Vetrovec</span><span class="tg">President & Co-Founder, Aspen Claims Service</span><span class="tm">Scheduled &middot; 14 Aug &#127760;</span></div>
+      <div class="fol">+ Follow</div>
+    </div>
+    <div class="cap clamp" id="cap-p3">When Aspen starts working with a new carrier, my first question is almost always the same. What's the file you regret the most from last year — and why?
+
+It sounds like a strange thing to lead with. It's not. What a claims leader remembers as their worst file usually reveals more about how their operation actually works than any performance metric they could show me.
+
+Some carriers name a specific catastrophic loss. Others name a routine file that spiraled. Some name a complaint they still feel personally about. What they all share is the moment the leader knew something had gone wrong — and where the system failed them.
+
+That's the diagnostic. Because whatever produced last year's regretted file is almost always still in the operation, waiting to produce the next one. It might be a workflow bottleneck. It might be a vendor handoff. It might be a communication gap that only shows up under specific conditions.
+
+The best claims operations I've seen aren't the ones without regretted files. They're the ones where the leader can name what changed after the regretted file happened.
+
+If you're heading into next year's planning cycle, that question is worth asking yourself before anyone asks it of you.
+
+<span class="tag">#ClaimsWithAspen</span> <span class="tag">#AspenVoices</span> <span class="tag">#ClaimsLeadership</span></div>
+    <span class="more" data-t="cap-p3">&hellip;see more</span>
+    <div class="media"><img src="assets/quote_14aug.jpg" alt=""/></div>
+    <div class="acts">
+      <span class="act">&#128077; Like</span><span class="act">&#128172; Comment</span><span class="act">&#128257; Repost</span><span class="act">&#10148; Send</span>
+    </div>
+  </div>
+  <div class="review"><div class="rnote">&#9998; Card reads &ldquo;CEO &ndash; Aspen Claims Service&rdquo; &mdash; confirm the byline title. Routing to Mark&#x27;s profile pending confirmation.</div></div>
+</div>
+
+<div class="post-wrap" id="p4">
+  <div class="datechip"><span class="dc-date">Mon · 17 Aug</span><span class="dc-kind">Long-form text post · Brent&#x27;s profile</span></div>
+  <div class="card">
+    <div class="head"><div class="av av-init">BM</div>
+      <div class="who"><span class="nm">Brent Morrow</span><span class="tg">Operations Manager, Aspen Claims Service</span><span class="tm">Scheduled &middot; 17 Aug &#127760;</span></div>
+      <div class="fol">+ Follow</div>
+    </div>
+    <div class="cap clamp" id="cap-p4">You can spot a well-run field operation in the first fifteen minutes of a deployment. Here's what you're looking at.
+
+I've spent enough time in the field across enough events to know within the first fifteen minutes of arriving whether a deployment is going to run well or run rough. The tells are small. Most of them aren't things you'd notice unless you'd been on both sides of them — a well-run event and one that unraveled — and even then they're easy to miss if you're focused on the wrong things.
+
+This is a piece for claims leaders who don't spend time in the field but need to know what good looks like when they're evaluating a vendor's field capabilities. It's also for the field adjusters who are trying to work out what separates a deployment they'll want to come back to from one they won't.
+
+The first tell is how people are briefed
+Every deployment starts with a briefing. The briefing tells you almost everything you need to know about how the operation runs.
+A weak briefing sounds like this: coverage territory, claim volume, filing deadlines, contact numbers, hotel information. Twenty minutes, everyone leaves with the same generic information, and questions get worked out later on individual calls.
+A strong briefing sounds different. The person leading it knows which adjusters are on the deployment by name. They've thought about which routes go to whom based on distance and complexity. They flag the specific carrier requirements that differ from what the team has been working on. They give the field team permission to escalate — with a specific person to escalate to and a phone number that will actually get answered.
+The difference isn't in what gets covered. It's in whether the person leading it has actually thought about the specific event they're briefing on, or whether they're running a template.
+
+The second tell is how the schedule works
+Bad field operations run inspection schedules on rigid time blocks that don't reflect what any given inspection actually requires. Every property gets the same slot. When one runs long — and one always runs long — the entire day cascades.
+Good field operations schedule against complexity, not against clock. Simple losses in tight windows. Complex losses with buffers. Multi-property routes clustered geographically. The dispatcher knows which properties are two-story, which need ladder assist, and which have policyholder access constraints that will slow down the front end.
+When you're an adjuster running an eight-inspection day, the difference between the two approaches is roughly whether you finish the day at 5:30 with clean files, or at 8:00 with three files half-documented and a plan to catch up tomorrow.
+
+The third tell is how escalations get handled
+Every field deployment produces situations that need a decision from someone above the adjuster level. Coverage questions. Access disputes. Complex causation calls. Policyholder situations that require special handling.
+The measure of a field operation is how fast those escalations move.
+In a well-run operation, the adjuster calls a specific person who has authority to make the call. The answer comes back within hours. The adjuster keeps moving.
+In a weak operation, the escalation gets routed through a queue. It sits. The adjuster either waits — which stalls the file — or makes their best guess and moves on, which creates a downstream problem the file will have to solve later.
+Speed of escalation is one of the most measurable indicators of field operations health, and it's rarely tracked as a metric. It should be.
+
+The fourth tell is what happens between inspection and submission
+This is the part most people outside field operations don't think about. Between the adjuster leaving the property and the file reaching the carrier desk, a lot happens — and how it happens tells you what the vendor is optimizing for.
+A weak operation lets adjusters draft files at whatever cadence they naturally work at. Some submit within twenty-four hours. Some take three days. Consistency isn't managed.
+A strong operation has an inspection-to-submission target that everyone works to — usually within twenty-four to forty-eight hours — and structures the review process to make that target achievable. Support staff help with scope entry. QA reviewers are available quickly. The system is built around the reality that a fresh file writes better than a stale one.
+
+The fifth tell is how adjusters talk about the operation
+This one is subjective but consistent. Adjusters who work in strong field operations describe the work in a specific way. They talk about the file, the property, the loss, the policyholder. They don't spend much time talking about internal friction.
+Adjusters in weaker operations talk about the operation itself. The scheduling. The QA turnaround. The communication gaps. The workarounds they've developed.
+When you ask a vendor to let you talk to their field adjusters, this is the signal to listen for. It tells you what the day-to-day experience of working on the deployment actually is — which tells you a lot about what the files coming out of that deployment will look like.
+
+What this means for claims leaders
+Most vendor evaluations focus on capabilities, technology, and coverage. Those matter. But they're the part of the operation that shows up in the RFP. The five tells above are what shows up in the deployment itself, and they're the ones that decide how the files actually land on your desk.
+— Brent Morrow
+Operations Manager, Aspen Claims Service</div>
+    <span class="more" data-t="cap-p4">&hellip;see more</span>
+    <div class="acts">
+      <span class="act">&#128077; Like</span><span class="act">&#128172; Comment</span><span class="act">&#128257; Repost</span><span class="act">&#10148; Send</span>
+    </div>
+  </div>
+  <div class="review"><div class="rnote">&#9998; Runs from Brent&#x27;s profile (routing pending confirmation). The calendar PDF cuts off mid-sentence at the close (&ldquo;Worth asking about before the&hellip;&rdquo;) &mdash; confirm the final line with Simran before publishing.</div></div>
+</div>
+
+<div class="post-wrap" id="p4r">
+  <div class="datechip"><span class="dc-date">Mon · 17 Aug</span><span class="dc-kind">Aspen page reshare of Brent&#x27;s post</span></div>
+  <div class="card">
+    <div class="reshare-line">&#8635; Aspen Claims Service reshared this from Brent Morrow</div>
+    <div class="head"><div class="av av-aspen"><svg viewBox="0 0 36 36"><circle cx="18" cy="18" r="17" fill="#0e1b12" stroke="#5F9828" stroke-width="2"/><path d="M8 24 L16 11 L21 18 L24 14 L28 24 Z" fill="#5F9828"/></svg></div>
+      <div class="who"><span class="nm">Aspen Claims Service</span><span class="tg">Property Claims Services</span><span class="tm">Scheduled &middot; 17 Aug &#127760;</span></div>
+      <div class="fol">+ Follow</div>
+    </div>
+    <div class="cap clamp" id="cap-p4r">A new piece from Brent on the small, structural details that separate strong field operations from average ones — the things nobody talks about but everyone in the field can see.
+
+— Brent Morrow, Operations Manager · Aspen Claims Service</div>
+    <span class="more" data-t="cap-p4r">&hellip;see more</span>
+    <div class="acts">
+      <span class="act">&#128077; Like</span><span class="act">&#128172; Comment</span><span class="act">&#128257; Repost</span><span class="act">&#10148; Send</span>
+    </div>
+  </div>
+  <div class="review"><div class="rnote">&#9998; No quote card delivered for Brent&#x27;s article yet &mdash; reshare runs bare or waits for a card to match Mark&#x27;s (2 Sep).</div></div>
+</div>
+
+<div class="post-wrap" id="p5">
+  <div class="datechip"><span class="dc-date">Wed · 19 Aug</span><span class="dc-kind">Static · Q2 regulatory sweep — creative in production</span></div>
+  <div class="card">
+    <div class="head"><div class="av av-aspen"><svg viewBox="0 0 36 36"><circle cx="18" cy="18" r="17" fill="#0e1b12" stroke="#5F9828" stroke-width="2"/><path d="M8 24 L16 11 L21 18 L24 14 L28 24 Z" fill="#5F9828"/></svg></div>
+      <div class="who"><span class="nm">Aspen Claims Service</span><span class="tg">Property Claims Services</span><span class="tm">Scheduled &middot; 19 Aug &#127760;</span></div>
+      <div class="fol">+ Follow</div>
+    </div>
+    <div class="cap clamp" id="cap-p5">Rather than a single deep-dive on one regulatory shift, worth pulling back for a broader view of what's moved this quarter.
+
+Three quiet developments from Q2 that changed the operational file standard across multiple states, without generating much industry conversation.
+
+Louisiana — post-Ida claims handling guidance. The state issued clarifying language on continuing-adjustment obligations for files where reconstruction has extended past normal windows. Documentation requirements for extended-adjustment files are now closer to what regulators expect on active files, not archived ones.
+
+North Carolina — updated appraisal panel disclosure requirements. New expectations around who qualifies as an appraiser, what disclosures the panel members must make, and how the appraisal process interacts with pending litigation. Operational shift is small; the paperwork trail is meaningful.
+
+California — updated ALE guidance on displacement extensions. The state clarified how additional living expense should be calculated when displacement extends beyond the initial coverage window. Vendors and carriers with California exposure should be tracking this — the interpretation matters.
+
+None of these developments made industry headlines. All of them changed something about how a compliant file needs to be built.
+
+If your operation's regulatory tracking still runs on major-headline monitoring, this is the quarter to add a broader sweep to the workflow.
+
+<span class="tag">#ClaimsWithAspen</span> <span class="tag">#ClaimsIntelligence</span> <span class="tag">#InsuranceRegulation</span></div>
+    <span class="more" data-t="cap-p5">&hellip;see more</span>
+    <div class="media"><div class="smock"><div class="smock-chip">Creative in production &middot; Static</div><div class="smock-line">&ldquo;None of these developments made industry headlines. All of them changed something about how a compliant file needs to be built.&rdquo;</div><div class="smock-brand">Aspen Claims Service</div></div></div>
+    <div class="acts">
+      <span class="act">&#128077; Like</span><span class="act">&#128172; Comment</span><span class="act">&#128257; Repost</span><span class="act">&#10148; Send</span>
+    </div>
+  </div>
+  <div class="review"><div class="rnote">&#9998; Static not yet delivered as its own file &mdash; and note: this post&#x27;s copy line currently appears on the 21 Aug creative (see next post). Regulatory items are stated as guidance/direction, not cited law &mdash; verify specifics before it runs.</div></div>
+</div>
+
+<div class="post-wrap" id="p6">
+  <div class="datechip"><span class="dc-date">Fri · 21 Aug</span><span class="dc-kind">Static · &ldquo;We&#x27;ll get back to you&rdquo;</span></div>
+  <div class="card">
+    <div class="head"><div class="av av-aspen"><svg viewBox="0 0 36 36"><circle cx="18" cy="18" r="17" fill="#0e1b12" stroke="#5F9828" stroke-width="2"/><path d="M8 24 L16 11 L21 18 L24 14 L28 24 Z" fill="#5F9828"/></svg></div>
+      <div class="who"><span class="nm">Aspen Claims Service</span><span class="tg">Property Claims Services</span><span class="tm">Scheduled &middot; 21 Aug &#127760;</span></div>
+      <div class="fol">+ Follow</div>
+    </div>
+    <div class="cap clamp" id="cap-p6">Four words that appear in most claims workflows and quietly do more damage than most operations realize.
+
+"We'll get back to you."
+
+Said by the adjuster to the policyholder. Said by the carrier desk to the adjuster. Said by the vendor to the carrier. Every version of the phrase adds a beat to the file's timeline and takes something off the account of trust the customer is holding.
+
+The problem isn't the delay itself. The problem is the ambiguity. "We'll get back to you" leaves the receiver holding the uncertainty — not knowing when, not knowing whether to follow up, not knowing whether the file is actually moving.
+
+The operations that handle this well replaced the phrase years ago. Instead of "we'll get back to you," they say "we'll have an answer by Thursday at 3pm." Small difference. Enormous downstream effect.
+
+Specificity closes cognitive loops. Ambiguity leaves them open. Multiply that across a thousand-file book and the operational cost adds up.
+
+The claims operations winning on satisfaction scores right now aren't necessarily faster than the ones losing on them. They're just more specific.
+
+<span class="tag">#ClaimsWithAspen</span> <span class="tag">#ClaimsOperations</span> <span class="tag">#PolicyholderExperience</span></div>
+    <span class="more" data-t="cap-p6">&hellip;see more</span>
+    <div class="media"><img src="assets/static_21aug.jpg" alt=""/></div>
+    <div class="acts">
+      <span class="act">&#128077; Like</span><span class="act">&#128172; Comment</span><span class="act">&#128257; Repost</span><span class="act">&#10148; Send</span>
+    </div>
+  </div>
+  <div class="review"><div class="rnote">&#9998; Creative mix-up: the subline under &ldquo;We&#x27;ll get back to you&rdquo; belongs to the 19 Aug regulatory post. It should read &ldquo;Four words that quietly do more damage than most operations realize.&rdquo; Send back for the swap.</div></div>
+</div>
+
+<div class="post-wrap" id="p7">
+  <div class="datechip"><span class="dc-date">Mon · 24 Aug</span><span class="dc-kind">Video · Mark VO (~75s) — creative in production (AI voiceover)</span></div>
+  <div class="card">
+    <div class="head"><img class="av" src="assets/mark_avatar.jpg" alt="Mark Vetrovec"/>
+      <div class="who"><span class="nm">Mark Vetrovec</span><span class="tg">President & Co-Founder, Aspen Claims Service</span><span class="tm">Scheduled &middot; 24 Aug &#127760;</span></div>
+      <div class="fol">+ Follow</div>
+    </div>
+    <div class="cap clamp" id="cap-p7">A short one from Mark on the questions coming out of carrier board conversations this year — and what they say about where the industry is heading.
+
+&#128266; Sound on.
+
+<span class="tag">#ClaimsWithAspen</span> <span class="tag">#AspenVoices</span> <span class="tag">#ClaimsLeadership</span></div>
+    <span class="more" data-t="cap-p7">&hellip;see more</span>
+    <div class="media vmock"><div class="vmock-chip">Creative in production · AI voiceover</div><div class="vmock-face"><img src="assets/mark_avatar.jpg" alt=""/></div><div class="vmock-wave"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="vmock-overlay">&ldquo;Boards are starting to ask about numbers that don&#x27;t fit on existing dashboards.&rdquo;<small>Mark Vetrovec · Aspen Claims Service</small></div></div>
+    <div class="acts">
+      <span class="act">&#128077; Like</span><span class="act">&#128172; Comment</span><span class="act">&#128257; Repost</span><span class="act">&#10148; Send</span>
+    </div>
+  </div>
+  <div class="review"><div class="rnote">&#9998; Video not yet produced &mdash; placeholder shows the approved visual direction. Full ~75s VO script is in the calendar, ready for recording.</div></div>
+</div>
+
+<div class="post-wrap" id="p8">
+  <div class="datechip"><span class="dc-date">Wed · 26 Aug</span><span class="dc-kind">Static · The complaint that never gets filed</span></div>
+  <div class="card">
+    <div class="head"><div class="av av-aspen"><svg viewBox="0 0 36 36"><circle cx="18" cy="18" r="17" fill="#0e1b12" stroke="#5F9828" stroke-width="2"/><path d="M8 24 L16 11 L21 18 L24 14 L28 24 Z" fill="#5F9828"/></svg></div>
+      <div class="who"><span class="nm">Aspen Claims Service</span><span class="tg">Property Claims Services</span><span class="tm">Scheduled &middot; 26 Aug &#127760;</span></div>
+      <div class="fol">+ Follow</div>
+    </div>
+    <div class="cap clamp" id="cap-p8">The most useful data point in your claims operation is one most carriers never track.
+
+For every formal complaint that gets filed against a claim, there are usually multiple policyholders who were unhappy enough to consider complaining and didn't. They chose not to escalate. They renewed anyway, or they didn't. Either way, their dissatisfaction never entered the system as data.
+
+This invisible complaint volume is where most of the real customer experience story lives. Carriers with formal complaint rates that look fine can still have retention problems, referral gaps, and reputational drag that trace back to files where policyholders felt something went wrong but didn't push it further.
+
+Three ways to surface the invisible signal:
+
+Post-close surveys with open-response fields. Not just NPS scores. Ask what the policyholder wishes had been different. Read the free text.
+
+Adjuster debriefs on difficult files. Adjusters know which files had unhappy policyholders long before any complaint would get filed. Ask them.
+
+Renewal data cross-referenced with claim history. Policyholders who filed a claim and didn't renew are telling you something. The reasons don't always get captured, but the correlation does.
+
+The claims operations pulling ahead on retention are the ones treating the complaint that didn't get filed as data worth chasing. It's the earliest signal available. It's also the one most operations aren't looking at.
+
+<span class="tag">#ClaimsWithAspen</span> <span class="tag">#ClaimsIntelligence</span> <span class="tag">#PolicyholderExperience</span></div>
+    <span class="more" data-t="cap-p8">&hellip;see more</span>
+    <div class="media"><img src="assets/static_26aug.jpg" alt=""/></div>
+    <div class="acts">
+      <span class="act">&#128077; Like</span><span class="act">&#128172; Comment</span><span class="act">&#128257; Repost</span><span class="act">&#10148; Send</span>
+    </div>
+  </div>
+</div>
+
+<div class="post-wrap" id="p9">
+  <div class="datechip"><span class="dc-date">Fri · 28 Aug</span><span class="dc-kind">Carousel · New series opener — Behind the File, Part 01</span></div>
+  <div class="card">
+    <div class="head"><div class="av av-aspen"><svg viewBox="0 0 36 36"><circle cx="18" cy="18" r="17" fill="#0e1b12" stroke="#5F9828" stroke-width="2"/><path d="M8 24 L16 11 L21 18 L24 14 L28 24 Z" fill="#5F9828"/></svg></div>
+      <div class="who"><span class="nm">Aspen Claims Service</span><span class="tg">Property Claims Services</span><span class="tm">Scheduled &middot; 28 Aug &#127760;</span></div>
+      <div class="fol">+ Follow</div>
+    </div>
+    <div class="cap clamp" id="cap-p9">Introducing a new series — Behind the File.
+
+Every claim has moments that shape everything downstream, but most of them happen out of the policyholder's view. Coverage decisions. Escalations. Documentation calls. Judgment moments the file never quite captures.
+
+This series pulls back the curtain on the operational decisions that happen inside a file — the ones that decide how it lands, what it costs, and how it's remembered.
+
+Part 01: The moment a coverage decision actually gets made.
+
+<span class="tag">#ClaimsWithAspen</span> <span class="tag">#BehindTheFile</span> <span class="tag">#ClaimsOperations</span></div>
+    <span class="more" data-t="cap-p9">&hellip;see more</span>
+    <div class="media carousel" data-n="6"><img class="cfr on" data-i="0" src="assets/carousel_28aug_f1.jpg" alt="frame 1"/><img class="cfr" data-i="1" src="assets/carousel_28aug_f2.jpg" alt="frame 2"/><img class="cfr" data-i="2" src="assets/carousel_28aug_f3.jpg" alt="frame 3"/><img class="cfr" data-i="3" src="assets/carousel_28aug_f4.jpg" alt="frame 4"/><img class="cfr" data-i="4" src="assets/carousel_28aug_f5.jpg" alt="frame 5"/><img class="cfr" data-i="5" src="assets/carousel_28aug_f6.jpg" alt="frame 6"/><button class="cnav prev" aria-label="previous">&#10094;</button><button class="cnav next" aria-label="next">&#10095;</button><span class="ccount">1/6</span><div class="cdots"><span class="dot on" data-i="0"></span><span class="dot" data-i="1"></span><span class="dot" data-i="2"></span><span class="dot" data-i="3"></span><span class="dot" data-i="4"></span><span class="dot" data-i="5"></span></div></div>
+    <div class="acts">
+      <span class="act">&#128077; Like</span><span class="act">&#128172; Comment</span><span class="act">&#128257; Repost</span><span class="act">&#10148; Send</span>
+    </div>
+  </div>
+</div>
+
+<div class="post-wrap" id="p10">
+  <div class="datechip"><span class="dc-date">Mon · 31 Aug</span><span class="dc-kind">Mark POV · quote card · Mark&#x27;s profile</span></div>
+  <div class="card">
+    <div class="head"><img class="av" src="assets/mark_avatar.jpg" alt="Mark Vetrovec"/>
+      <div class="who"><span class="nm">Mark Vetrovec</span><span class="tg">President & Co-Founder, Aspen Claims Service</span><span class="tm">Scheduled &middot; 31 Aug &#127760;</span></div>
+      <div class="fol">+ Follow</div>
+    </div>
+    <div class="cap clamp" id="cap-p10">An observation worth sharing, because I hear the opposite version of it constantly.
+
+The claims vendors talking loudest about AI right now are almost never the ones using it most effectively. They're the ones with the biggest marketing budgets and the least operational integration.
+
+The vendors actually using AI well — for file completeness checks, photo analysis, workflow triage, quality assurance support — usually treat it as an internal operational discipline, not as a headline. It's not something they lead their pitch with. It's something that quietly makes their files cleaner and their turnaround faster.
+
+The distinction matters, because carriers spending real dollars on AI-heavy vendor relationships are often paying for the pitch, not the operational advantage. And the operational advantage — the one worth paying for — is usually invisible from outside the operation.
+
+If you're evaluating a vendor that leads with AI capabilities, worth asking a specific question: Show me a recent file where AI meaningfully affected the outcome. Walk me through what changed because of it.
+
+If they can answer specifically, that's a real operation. If the answer is vague or hypothetical, that's marketing.
+
+The technology matters. The way it's talked about tells you whether it's actually being used.
+
+<span class="tag">#ClaimsWithAspen</span> <span class="tag">#AspenVoices</span> <span class="tag">#VendorPerformance</span></div>
+    <span class="more" data-t="cap-p10">&hellip;see more</span>
+    <div class="media"><img src="assets/quote_31aug.jpg" alt=""/></div>
+    <div class="acts">
+      <span class="act">&#128077; Like</span><span class="act">&#128172; Comment</span><span class="act">&#128257; Repost</span><span class="act">&#10148; Send</span>
+    </div>
+  </div>
+  <div class="review"><div class="rnote">&#9998; Card reads &ldquo;CEO &ndash; Aspen Claims Service&rdquo; &mdash; confirm the byline title. Routing to Mark&#x27;s profile pending confirmation.</div></div>
+</div>
+
+<div class="post-wrap" id="p11">
+  <div class="datechip"><span class="dc-date">Wed · 2 Sep</span><span class="dc-kind">Long-form text post · Mark&#x27;s profile</span></div>
+  <div class="card">
+    <div class="head"><img class="av" src="assets/mark_avatar.jpg" alt="Mark Vetrovec"/>
+      <div class="who"><span class="nm">Mark Vetrovec</span><span class="tg">President & Co-Founder, Aspen Claims Service</span><span class="tm">Scheduled &middot; 2 Sep &#127760;</span></div>
+      <div class="fol">+ Follow</div>
+    </div>
+    <div class="cap clamp" id="cap-p11">The word "partner" has been overused in vendor conversations to the point of losing meaning. It's finally starting to mean something again — and here's what actually distinguishes a partner from a vendor.
+
+For most of my career, the word "partner" in vendor conversations meant nothing. It was the polite thing carriers called vendors when they wanted the relationship to feel less transactional than it was. Everyone knew it. Nobody said it. The word did some marketing work and moved on.
+
+Something has shifted over the last two years. The word is starting to mean something again — and the vendors and carriers who understand what it means now are pulling ahead of the ones still using it as a decorative term.
+
+Here's what I've come to believe distinguishes a real partnership from a vendor relationship dressed up in partnership language.
+
+A partner is measured on outcomes the vendor doesn't fully control
+A vendor is measured on their deliverables. Cycle time. Cost per file. SLA compliance. These are things the vendor can control end-to-end — inputs go in, outputs come out, performance is measurable.
+A partner is measured on outcomes that require both parties to get right. Reopen rate. Policyholder satisfaction. Retention on claim-affected policies. Total lifecycle claim cost. These aren't things the vendor can control alone. They require the carrier's workflow to work with the vendor's workflow, and they measure whether the combined system is producing the outcomes the carrier actually cares about.
+When a carrier starts measuring a vendor on outcomes the vendor can't fully control, they're not being unfair. They're signaling that the relationship has moved from transactional to structural.
+
+A partner is invited into problems, not just tasks
+A vendor gets assignments. Files come in, work gets done, files go out. The relationship stays inside a defined scope of work.
+A partner gets invited into problems the carrier is trying to solve. How do we improve our CAT response? How do we bring down our supplement volume? How do we design a better file standard? These conversations happen outside the SOW. They happen because the carrier trusts the vendor to think about their business, not just to execute against it.
+The invitation is the tell. When a vendor gets asked to weigh in on strategic questions, the relationship has moved somewhere different than a normal contract.
+
+A partner tells the carrier things they don't want to hear
+This is the one that separates the real partnerships from the ones performing partnership language.
+A vendor delivers what the carrier asks for. If the carrier asks for aggressive cycle times, the vendor optimizes for aggressive cycle times. If the carrier asks for a specific file standard, the vendor delivers to that standard. The relationship stays professional, deliverable-focused, and pleasant.
+A partner sometimes tells the carrier that what they're asking for is going to cost them elsewhere. That the cycle time they want will produce reopens they don't want. That the file standard they specified is missing a documentation element that will show up as a supplement six months later. That the vendor they're evaluating for CAT capacity has structural problems they should know about.
+These are uncomfortable conversations. Vendors avoid them because they're not their place. Partners have them because they know that if they don't, the carrier will pay a downstream cost that the vendor could have flagged.
+The willingness to be uncomfortable is the highest-signal indicator I know of that a partnership has actually formed.
+
+A partner is stable through leadership changes
+Vendor relationships live inside org charts. When a claims VP changes, or a procurement director moves on, the vendor relationship often gets reevaluated. The relationship was with the person, not with the institution.
+Partnerships survive personnel changes. They survive because they've been documented in structures other than a single relationship — joint operating rhythms, shared metrics dashboards, escalation protocols that outlast any one leader. The next VP inherits a working relationship, not an evaluation cycle.
+This is one of the practical tests for whether a partnership is real. Ask what happens to the vendor relationship if the current claims VP leaves. If the answer is honest — "it would probably get reviewed" — that's a vendor relationship, and there's nothing wrong with that. If the answer is "the working rhythm continues regardless" — that's structural, and that's a partnership.
+
+A partner is willing to walk away
+This one is counterintuitive. But it's true.
+A vendor is incentivized to keep the relationship going regardless of fit, because their revenue depends on it. A partner is willing to say, at some point, that a particular piece of work isn't the right fit for their operation and should be handled elsewhere.
+That willingness to walk away is what makes the working relationship trustworthy. If a vendor will take any assignment, their advice is worth less. If a vendor will decline work that's not right for them, their willingness to take on the work you do give them means something.
+The best partners I've watched work are also the ones most willing to be honest about the limits of what they should be doing.
+
+Why this matters now
+The industry is heading into a period where the difference between a vendor relationship and a partnership is going to matter more than it has in a long time. Regulatory pressure is increasing. Reinsurance costs are shifting. Policyholder expectations are recalibrating. Carriers that navigate these shifts well are going to be the ones with real partners on the vendor side, not just capable vendors.
+
+The word "partner" is finally starting to mean something because the operational stakes have gotten high enough to require it.
+
+Worth reading the vendor conversations in your own operation with those distinctions in mind.
+— Mark Vetrovec
+CEO, Aspen Claims Service</div>
+    <span class="more" data-t="cap-p11">&hellip;see more</span>
+    <div class="acts">
+      <span class="act">&#128077; Like</span><span class="act">&#128172; Comment</span><span class="act">&#128257; Repost</span><span class="act">&#10148; Send</span>
+    </div>
+  </div>
+  <div class="review"><div class="rnote">&#9998; Runs from Mark&#x27;s profile (routing pending confirmation). Signs off &ldquo;CEO&rdquo; &mdash; confirm the byline title.</div></div>
+</div>
+
+<div class="post-wrap" id="p11r">
+  <div class="datechip"><span class="dc-date">Wed · 2 Sep</span><span class="dc-kind">Aspen page reshare of Mark&#x27;s post</span></div>
+  <div class="card">
+    <div class="reshare-line">&#8635; Aspen Claims Service reshared this from Mark Vetrovec</div>
+    <div class="head"><div class="av av-aspen"><svg viewBox="0 0 36 36"><circle cx="18" cy="18" r="17" fill="#0e1b12" stroke="#5F9828" stroke-width="2"/><path d="M8 24 L16 11 L21 18 L24 14 L28 24 Z" fill="#5F9828"/></svg></div>
+      <div class="who"><span class="nm">Aspen Claims Service</span><span class="tg">Property Claims Services</span><span class="tm">Scheduled &middot; 2 Sep &#127760;</span></div>
+      <div class="fol">+ Follow</div>
+    </div>
+    <div class="cap clamp" id="cap-p11r">A piece on the shift happening quietly in how carriers and claims vendors are structuring their relationships — and what makes a partnership real rather than nominal.
+
+— Mark Vetrovec, CEO · Aspen Claims Service</div>
+    <span class="more" data-t="cap-p11r">&hellip;see more</span>
+    <div class="media"><img src="assets/quote_2sep.jpg" alt=""/></div>
+    <div class="acts">
+      <span class="act">&#128077; Like</span><span class="act">&#128172; Comment</span><span class="act">&#128257; Repost</span><span class="act">&#10148; Send</span>
+    </div>
+  </div>
+  <div class="review"><div class="rnote">&#9998; Quote card reads &ldquo;CEO &ndash; Aspen Claims Service&rdquo; &mdash; confirm the byline title before posting.</div></div>
+</div>
+
+<div class="post-wrap" id="p12">
+  <div class="datechip"><span class="dc-date">Fri · 4 Sep</span><span class="dc-kind">Video · Brent VO (~75s) — creative in production (AI voiceover)</span></div>
+  <div class="card">
+    <div class="head"><div class="av av-init">BM</div>
+      <div class="who"><span class="nm">Brent Morrow</span><span class="tg">Operations Manager, Aspen Claims Service</span><span class="tm">Scheduled &middot; 4 Sep &#127760;</span></div>
+      <div class="fol">+ Follow</div>
+    </div>
+    <div class="cap clamp" id="cap-p12">A short one from Brent on something he says often in internal conversations — and rarely says publicly. Worth putting on record.
+
+&#128266; Sound on.
+
+<span class="tag">#ClaimsWithAspen</span> <span class="tag">#AspenVoices</span> <span class="tag">#FieldOperations</span></div>
+    <span class="more" data-t="cap-p12">&hellip;see more</span>
+    <div class="media vmock"><div class="vmock-chip">Creative in production · AI voiceover</div><div class="vmock-face"><span>BM</span></div><div class="vmock-wave"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="vmock-overlay">&ldquo;The field adjusters working your claims are usually the most experienced professionals in your entire claims lifecycle.&rdquo;<small>Brent Morrow · Operations Manager · Aspen Claims</small></div></div>
+    <div class="acts">
+      <span class="act">&#128077; Like</span><span class="act">&#128172; Comment</span><span class="act">&#128257; Repost</span><span class="act">&#10148; Send</span>
+    </div>
+  </div>
+  <div class="review"><div class="rnote">&#9998; Video not yet produced &mdash; placeholder shows the approved visual direction. Full ~75s VO script is in the calendar, ready for recording.</div></div>
+</div>
+
+</div>
+<div class="footer">Prepared by Damco Digital for Aspen Claims Service &middot; August 2026 calendar review<br/>Review page only &mdash; nothing here is live. Creatives are final production files where delivered; captions verbatim from the approved calendar.</div>
+<script>
+document.querySelectorAll(".more").forEach(function(m){
+  var c=document.getElementById(m.dataset.t);
+  if(c.scrollHeight<=c.clientHeight+4){m.style.display="none";}
+  m.addEventListener("click",function(){
+    var open=c.classList.toggle("clamp")===false;
+    m.textContent=open?"see less":"…see more";
+  });
+});
+document.querySelectorAll(".carousel").forEach(function(car){
+  var n=+car.dataset.n,i=0;
+  function go(k){
+    i=(k+n)%n;
+    car.querySelectorAll(".cfr").forEach(function(f){f.classList.toggle("on",+f.dataset.i===i)});
+    car.querySelectorAll(".dot").forEach(function(d){d.classList.toggle("on",+d.dataset.i===i)});
+    car.querySelector(".ccount").textContent=(i+1)+"/"+n;
+  }
+  car.querySelector(".prev").addEventListener("click",function(){go(i-1)});
+  car.querySelector(".next").addEventListener("click",function(){go(i+1)});
+  car.querySelectorAll(".dot").forEach(function(d){d.addEventListener("click",function(){go(+d.dataset.i)})});
+});
+</script>
+</body>
+</html>
