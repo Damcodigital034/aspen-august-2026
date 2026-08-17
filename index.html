@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Aspen LinkedIn — 18 Aug to 14 Sep Feed Preview</title>
+<title>Aspen LinkedIn — 18 Aug to 7 Sep Feed Preview</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;background:#f4f2ee;color:#1f2124}
@@ -15,21 +15,6 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-s
 .mp{display:flex;flex-direction:column}
 .mp .l{font-size:10px;font-weight:700;color:#7a8a72;letter-spacing:1.5px;text-transform:uppercase}
 .mp .v{font-size:14px;font-weight:700;margin-top:3px;color:#fff}
-.notes{max-width:760px;margin:26px auto 0;padding:0 20px}
-.nbox{background:#fff;border:1px solid #e0ddd6;border-left:4px solid #2E7D32;border-radius:10px;padding:18px 22px;margin-bottom:12px}
-.nbox.warn{border-left-color:#c07d1a}
-.nbox .nt{font-size:11px;font-weight:800;letter-spacing:1.6px;color:#2E7D32;text-transform:uppercase;margin-bottom:8px}
-.nbox.warn .nt{color:#a9690f}
-.nbox ul{padding-left:18px;font-size:13.5px;color:#3d4238;line-height:1.7}
-.tblwrap{overflow-x:auto;-webkit-overflow-scrolling:touch}
-table.sched{width:100%;border-collapse:collapse;font-size:12.5px;min-width:520px}
-table.sched th{text-align:left;font-size:10px;letter-spacing:1.2px;text-transform:uppercase;color:#6d7568;border-bottom:1px solid #ddd9d1;padding:7px 9px;font-weight:800;white-space:nowrap}
-table.sched td{padding:7px 9px;border-bottom:1px solid #efece5;vertical-align:top;line-height:1.4}
-table.sched td.d{font-weight:700;white-space:nowrap;color:#1f2124}
-table.sched tr.wk td{background:#f7f5f0;font-size:10.5px;letter-spacing:1.4px;text-transform:uppercase;font-weight:800;color:#7a8272}
-.pill{display:inline-block;font-size:9.5px;font-weight:800;letter-spacing:0.8px;text-transform:uppercase;padding:2px 7px;border-radius:10px;white-space:nowrap}
-.pill.ok{background:#e7f2e2;color:#2E7D32}
-.pill.prod{background:#fdf1dc;color:#a9690f}
 .feed{max-width:560px;margin:30px auto 0;padding:0 10px}
 .datechip{display:flex;align-items:center;gap:10px;margin:26px 2px 8px;flex-wrap:wrap}
 .dc-date{font-size:12px;font-weight:800;letter-spacing:1px;text-transform:uppercase;color:#4a5245;background:#e9e6de;padding:4px 10px;border-radius:20px}
@@ -59,35 +44,9 @@ table.sched tr.wk td{background:#f7f5f0;font-size:10.5px;letter-spacing:1.4px;te
 .cdots{position:absolute;bottom:10px;left:0;right:0;display:flex;justify-content:center;gap:6px;z-index:3}
 .dot{width:7px;height:7px;border-radius:50%;background:rgba(255,255,255,0.45);cursor:pointer}
 .dot.on{background:#fff}
-.vmock{aspect-ratio:4/5;background:radial-gradient(ellipse at 65% 30%,#1c2f4a 0%,#0d1526 65%);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:20px;position:relative;overflow:hidden}
-.vmock-chip{position:absolute;top:12px;left:12px;background:rgba(245,180,84,0.95);color:#231a06;font-size:10.5px;font-weight:800;letter-spacing:1.2px;text-transform:uppercase;padding:5px 10px;border-radius:4px}
-.vmock-face{width:130px;height:130px;border-radius:50%;background:#27405f;display:flex;align-items:center;justify-content:center;color:#fff;font-size:38px;font-weight:800;overflow:hidden;border:3px solid rgba(255,255,255,0.25)}
-.vmock-face img{width:100%;height:100%;object-fit:cover}
-.vmock-wave{display:flex;align-items:center;gap:3px;height:30px}
-.vmock-wave i{width:3.5px;background:#5aa8ff;border-radius:2px;animation:wv 1.1s ease-in-out infinite}
-@keyframes wv{0%,100%{height:8px}50%{height:26px}}
-.vmock-overlay{position:absolute;bottom:0;left:0;right:0;padding:18px 20px;background:linear-gradient(to top,rgba(0,0,0,0.85),transparent);color:#fff;font-size:14.5px;font-weight:700;line-height:1.4}
-.vmock-overlay small{display:block;font-size:11px;font-weight:600;color:#b8c8dc;margin-top:6px}
-.smock{aspect-ratio:4/5;background:radial-gradient(ellipse at 30% 20%,#16301c 0%,#0e1b12 70%);display:flex;flex-direction:column;align-items:center;justify-content:center;position:relative;overflow:hidden;padding:36px}
-.smock-chip{position:absolute;top:12px;left:12px;background:rgba(245,180,84,0.95);color:#231a06;font-size:10.5px;font-weight:800;letter-spacing:1.2px;text-transform:uppercase;padding:5px 10px;border-radius:4px}
-.smock-line{color:#fff;font-size:20px;font-weight:800;line-height:1.45;text-align:center;max-width:400px}
-.smock-brand{position:absolute;bottom:16px;right:18px;color:#8fce56;font-size:10.5px;font-weight:800;letter-spacing:2px;text-transform:uppercase}
-.fmock{aspect-ratio:4/5;background:linear-gradient(165deg,#12271a 0%,#0d1512 70%);position:relative;overflow:hidden;padding:52px 34px 46px;display:flex;flex-direction:column;justify-content:center}
-.fmock-chip{position:absolute;top:12px;left:12px;background:rgba(245,180,84,0.95);color:#231a06;font-size:10.5px;font-weight:800;letter-spacing:1.2px;text-transform:uppercase;padding:5px 10px;border-radius:4px}
-.fmock-no{position:absolute;top:14px;right:60px;color:#7d8a76;font-size:10.5px;font-weight:800;letter-spacing:1.6px;text-transform:uppercase}
-.fmock-h{color:#8fce56;font-size:11px;font-weight:800;letter-spacing:2px;text-transform:uppercase;margin-bottom:16px}
-.fmock-b{color:#f2f4ef;font-size:16.5px;font-weight:600;line-height:1.55;white-space:pre-wrap}
-.fmock-b b{font-weight:800}
-.fmock-brand{position:absolute;bottom:16px;left:34px;color:#5e6b58;font-size:10px;font-weight:800;letter-spacing:2px;text-transform:uppercase}
 .acts{display:flex;justify-content:space-around;padding:8px 8px;border-top:1px solid #eee}
 .act{font-size:13px;color:#555;font-weight:600;padding:8px 10px;border-radius:6px}
 .act:hover{background:#f2f0ea}
-.review{display:flex;align-items:center;flex-wrap:wrap;gap:8px;padding:10px 4px 0}
-.rnote{font-size:12px;color:#8a6d1f;background:#fdf6e3;border:1px solid #f0e3b8;border-radius:6px;padding:7px 10px;line-height:1.45;flex-basis:100%}
-.rnote.good{color:#2c6b2f;background:#eef7ea;border-color:#cfe5c6}
-.wkmark{max-width:560px;margin:34px auto 0;padding:0 12px;display:flex;align-items:center;gap:12px}
-.wkmark span{font-size:10.5px;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:#8a9182;white-space:nowrap}
-.wkmark i{flex:1;height:1px;background:#ddd9d1}
 .footer{text-align:center;font-size:12px;color:#8a9182;padding:34px 16px 60px;line-height:1.6}
 @media (max-width:620px){.hero h1{font-size:24px}}
 </style>
@@ -95,78 +54,17 @@ table.sched tr.wk td{background:#f7f5f0;font-size:10.5px;letter-spacing:1.4px;te
 <body>
 <div class="hero"><div class="hero-in">
   <div class="eyebrow">Aspen Claims Service &middot; LinkedIn</div>
-  <h1>18 Aug &ndash; 14 Sep &mdash; the feed, as it will run</h1>
-  <div class="sub">Rebuilt on Simran&rsquo;s updated calendar, resequenced to open on <b>Tue 18 August</b> and land the full 14-post run by <b>Mon 14 September</b>. Every post is shown the way it will appear in the LinkedIn feed &mdash; final creatives where they exist, captions verbatim from the updated calendar, correct posting profile. Scroll like you would scroll LinkedIn. Tap &ldquo;see more&rdquo; to read any caption in full, and use the arrows on the carousels.</div>
+  <h1>18 Aug &ndash; 7 Sep &mdash; the feed, as it will run</h1>
+  <div class="sub">Every post below is shown the way it will appear in the LinkedIn feed &mdash; final creatives, captions verbatim from the calendar, correct posting profile. Scroll like you would scroll LinkedIn. Tap &ldquo;see more&rdquo; to read any caption in full, and use the arrows on the two carousels.</div>
   <div class="meta">
-    <div class="mp"><span class="l">Window</span><span class="v">18 Aug &ndash; 14 Sep</span></div>
-    <div class="mp"><span class="l">Posts</span><span class="v">14 (+2 page reshares)</span></div>
-    <div class="mp"><span class="l">Mix</span><span class="v">4 static &middot; 3 carousel &middot; 2 quote card &middot; 2 VO video &middot; 1 motion &middot; 2 long-form</span></div>
-    <div class="mp"><span class="l">Cadence</span><span class="v">Mon &middot; Wed &middot; Fri</span></div>
-    <div class="mp"><span class="l">Creatives ready</span><span class="v">8 of 14</span></div>
+    <div class="mp"><span class="l">Window</span><span class="v">18 Aug &ndash; 7 Sep</span></div>
+    <div class="mp"><span class="l">Posts</span><span class="v">9 (+2 page reshares)</span></div>
+    <div class="mp"><span class="l">Mix</span><span class="v">2 static &middot; 2 carousel &middot; 2 quote card &middot; 1 motion &middot; 2 long-form</span></div>
+    <div class="mp"><span class="l">Creatives</span><span class="v">All final</span></div>
   </div>
 </div></div>
-<div class="notes">
-
-  <div class="nbox"><div class="nt">What changed in this version</div>
-    <ul>
-      <li><b>Window moved.</b> The original plan opened 10 Aug. Nothing has gone out, so the run has been shifted to open <b>Tue 18 Aug</b> and close <b>Mon 14 Sep</b> &mdash; inside the 15 Sep boundary.</li>
-      <li><b>Post order is unchanged.</b> Simran&rsquo;s sequence 1&ndash;12 (August) then 1&ndash;2 (September) runs exactly as written. Only the dates moved.</li>
-      <li><b>Two new creatives are in.</b> Post 1 arrived as an 8-second silent motion graphic rather than a flat static, and Post 6 arrived corrected &mdash; the subline mix-up we flagged last round is fixed.</li>
-      <li><b>Brent&rsquo;s article is now complete.</b> The previous PDF cut off mid-sentence at the close; the updated version ends properly (&ldquo;Worth asking about before the next event.&rdquo;).</li>
-      <li><b>Post 1 copy tightened.</b> The opener no longer leans on a data claim, and the closing line now reads &ldquo;partners&rdquo; rather than &ldquo;vendors&rdquo; &mdash; both in line with the playbook.</li>
-      <li><b>Asset files renamed</b> from dates to post numbers, so a future date change doesn&rsquo;t leave misleading filenames behind.</li>
-    </ul>
-  </div>
-
-  <div class="nbox"><div class="nt">How the 14 posts fit the window</div>
-    <ul>
-      <li><b>Week one carries four posts</b> (Tue&ndash;Fri, 18&ndash;21 Aug) to absorb the slip. The load is split across three profiles &mdash; Aspen page Tue and Wed, Mark Thu, Brent Fri &mdash; so no single feed posts on back-to-back days.</li>
-      <li><b>Every week after that is a clean Mon / Wed / Fri</b> from 24 Aug through 14 Sep.</li>
-      <li>Fourteen posts genuinely need slightly more than three a week to fit a four-week window. Front-loading the extra one is the option that clears the two finished creatives sitting idle and leaves the tail on rhythm.</li>
-    </ul>
-  </div>
-
-  <div class="nbox"><div class="nt">Schedule at a glance</div>
-    <div class="tblwrap"><table class="sched">
-      <thead><tr><th>Date</th><th>Post</th><th>Format</th><th>Runs from</th><th>Creative</th></tr></thead>
-      <tbody>
-        <tr class="wk"><td colspan="5">Week 1 &mdash; catch-up</td></tr>
-        <tr><td class="d">Tue 18 Aug</td><td>Aug 1 &middot; The first three days</td><td>Motion graphic (8s, silent)</td><td>Aspen page</td><td><span class="pill ok">Ready</span></td></tr>
-        <tr><td class="d">Wed 19 Aug</td><td>Aug 2 &middot; How Claims Actually Work, Part 05</td><td>Carousel, 6 frames</td><td>Aspen page</td><td><span class="pill ok">Ready</span></td></tr>
-        <tr><td class="d">Thu 20 Aug</td><td>Aug 3 &middot; The file you regret most</td><td>Quote card</td><td>Mark</td><td><span class="pill ok">Ready</span></td></tr>
-        <tr><td class="d">Fri 21 Aug</td><td>Aug 4 &middot; What good field operations look like</td><td>Long-form + page reshare</td><td>Brent</td><td><span class="pill prod">Reshare card</span></td></tr>
-        <tr class="wk"><td colspan="5">Week 2</td></tr>
-        <tr><td class="d">Mon 24 Aug</td><td>Aug 5 &middot; Three quiet Q2 developments</td><td>Static</td><td>Aspen page</td><td><span class="pill prod">In production</span></td></tr>
-        <tr><td class="d">Wed 26 Aug</td><td>Aug 6 &middot; &ldquo;We&rsquo;ll get back to you&rdquo;</td><td>Static</td><td>Aspen page</td><td><span class="pill ok">Ready &mdash; new</span></td></tr>
-        <tr><td class="d">Fri 28 Aug</td><td>Aug 7 &middot; Three questions from carrier boards</td><td>VO video, ~75s</td><td>Mark</td><td><span class="pill prod">In production</span></td></tr>
-        <tr class="wk"><td colspan="5">Week 3</td></tr>
-        <tr><td class="d">Mon 31 Aug</td><td>Aug 8 &middot; The complaint that never gets filed</td><td>Static</td><td>Aspen page</td><td><span class="pill ok">Ready</span></td></tr>
-        <tr><td class="d">Wed 2 Sep</td><td>Aug 9 &middot; Behind the File, Part 01</td><td>Carousel, 6 frames</td><td>Aspen page</td><td><span class="pill ok">Ready</span></td></tr>
-        <tr><td class="d">Fri 4 Sep</td><td>Aug 10 &middot; The vendors loudest about AI</td><td>Quote card</td><td>Mark</td><td><span class="pill ok">Ready</span></td></tr>
-        <tr class="wk"><td colspan="5">Week 4</td></tr>
-        <tr><td class="d">Mon 7 Sep</td><td>Aug 11 &middot; Why &ldquo;partner&rdquo; finally means something</td><td>Long-form + page reshare</td><td>Mark</td><td><span class="pill ok">Ready</span></td></tr>
-        <tr><td class="d">Wed 9 Sep</td><td>Aug 12 &middot; The people you never meet</td><td>VO video, ~75s</td><td>Brent</td><td><span class="pill prod">In production</span></td></tr>
-        <tr><td class="d">Fri 11 Sep</td><td>Sep 1 &middot; The 90-day CAT read</td><td>Static</td><td>Aspen page</td><td><span class="pill prod">Not delivered</span></td></tr>
-        <tr class="wk"><td colspan="5">Week 5</td></tr>
-        <tr><td class="d">Mon 14 Sep</td><td>Sep 2 &middot; Behind the File, Part 02</td><td>Carousel, 6 frames</td><td>Aspen page</td><td><span class="pill prod">Not delivered</span></td></tr>
-      </tbody>
-    </table></div>
-  </div>
-
-  <div class="nbox warn"><div class="nt">Open before this window runs</div>
-    <ul>
-      <li><b>Series handoff timing.</b> The Part 05 caption says the new series starts &ldquo;next week,&rdquo; but Behind the File Part 01 lands 2 Sep, two weeks later. Cheapest fix is a two-word caption edit; the alternative is moving Part 01 forward.</li>
-      <li><b>Regulatory specifics unverified.</b> Post 5 names Louisiana, North Carolina and California guidance. Stated as direction rather than cited law, but the three items should be checked against source before this runs.</li>
-      <li><b>URL badge on the creatives renders as &ldquo;www.claimsadjusters.co&rdquo;</b> &mdash; missing the final character, on every template including both new files. Confirm which domain should carry the badge and have the template corrected once.</li>
-      <li><b>Still to be delivered:</b> Post 5 static, Post 7 and Post 12 VO videos, a reshare card for Brent&rsquo;s article, and both September creatives. Placeholders below carry the approved copy so the sequence still reads end to end.</li>
-      <li><b>Hashtags are shown verbatim</b> and still lead with branded tags. Playbook is three industry tags &mdash; worth one pass with Simran before scheduling.</li>
-    </ul>
-  </div>
-</div>
 
 <div class="feed">
-
-<div class="wkmark"><span>Week 1 &middot; catch-up</span><i></i></div>
 
 <div class="post-wrap" id="p1">
   <div class="datechip"><span class="dc-date">Tue · 18 Aug</span><span class="dc-kind">Motion graphic · The first three days</span></div>
@@ -198,7 +96,6 @@ The partners who win on cycle time in the middle of the process usually built th
       <span class="act">&#128077; Like</span><span class="act">&#128172; Comment</span><span class="act">&#128257; Repost</span><span class="act">&#10148; Send</span>
     </div>
   </div>
-  <div class="review"><div class="rnote good">&#10003; Delivered this round. Came back as an 8-second silent motion graphic rather than a flat static &mdash; it will autoplay muted in feed, and the copy line is fully legible on the closing frame, so it works without sound. Caption opener and the closing &ldquo;partners&rdquo; line both reflect our feedback.</div></div>
 </div>
 
 <div class="post-wrap" id="p2">
@@ -221,7 +118,6 @@ Part 05 of our series on how claims actually work. This is the finale — we'll 
       <span class="act">&#128077; Like</span><span class="act">&#128172; Comment</span><span class="act">&#128257; Repost</span><span class="act">&#10148; Send</span>
     </div>
   </div>
-  <div class="review"><div class="rnote">&#9998; Caption promises the new series &ldquo;next week&rdquo; &mdash; Behind the File Part 01 now lands 2 Sep, two weeks out. Either soften the line or move Part 01 forward.</div></div>
 </div>
 
 <div class="post-wrap" id="p3">
@@ -304,7 +200,6 @@ Operations Manager, Aspen Claims Service</div>
       <span class="act">&#128077; Like</span><span class="act">&#128172; Comment</span><span class="act">&#128257; Repost</span><span class="act">&#10148; Send</span>
     </div>
   </div>
-  <div class="review"><div class="rnote good">&#10003; The truncated close is fixed &mdash; the article now ends on &ldquo;Worth asking about before the next event.&rdquo; Full piece is ready to publish from Brent&rsquo;s profile.</div></div>
 </div>
 
 <div class="post-wrap" id="p4r">
@@ -325,44 +220,10 @@ Operations Manager, Aspen Claims Service</div>
       <span class="act">&#128077; Like</span><span class="act">&#128172; Comment</span><span class="act">&#128257; Repost</span><span class="act">&#10148; Send</span>
     </div>
   </div>
-  <div class="review"><div class="rnote">&#9998; Still no quote card for Brent&rsquo;s article. Mark&rsquo;s equivalent (7 Sep) has one &mdash; either match it or accept a bare reshare here.</div></div>
-</div>
-
-<div class="wkmark"><span>Week 2</span><i></i></div>
-
-<div class="post-wrap" id="p5">
-  <div class="datechip"><span class="dc-date">Mon · 24 Aug</span><span class="dc-kind">Static · Q2 regulatory sweep — creative in production</span></div>
-  <div class="card">
-    <div class="head"><div class="av av-aspen"><svg viewBox="0 0 36 36"><circle cx="18" cy="18" r="17" fill="#0e1b12" stroke="#5F9828" stroke-width="2"/><path d="M8 24 L16 11 L21 18 L24 14 L28 24 Z" fill="#5F9828"/></svg></div>
-      <div class="who"><span class="nm">Aspen Claims Service</span><span class="tg">Property Claims Services</span><span class="tm">Scheduled &middot; 24 Aug &#127760;</span></div>
-      <div class="fol">+ Follow</div>
-    </div>
-    <div class="cap clamp" id="cap-p5">Rather than a single deep-dive on one regulatory shift, worth pulling back for a broader view of what's moved this quarter.
-
-Three quiet developments from Q2 that changed the operational file standard across multiple states, without generating much industry conversation.
-
-Louisiana — post-Ida claims handling guidance. The state issued clarifying language on continuing-adjustment obligations for files where reconstruction has extended past normal windows. Documentation requirements for extended-adjustment files are now closer to what regulators expect on active files, not archived ones.
-
-North Carolina — updated appraisal panel disclosure requirements. New expectations around who qualifies as an appraiser, what disclosures the panel members must make, and how the appraisal process interacts with pending litigation. Operational shift is small; the paperwork trail is meaningful.
-
-California — updated ALE guidance on displacement extensions. The state clarified how additional living expense should be calculated when displacement extends beyond the initial coverage window. Vendors and carriers with California exposure should be tracking this — the interpretation matters.
-
-None of these developments made industry headlines. All of them changed something about how a compliant file needs to be built.
-
-If your operation's regulatory tracking still runs on major-headline monitoring, this is the quarter to add a broader sweep to the workflow.
-
-<span class="tag">#ClaimsWithAspen</span> <span class="tag">#ClaimsIntelligence</span> <span class="tag">#InsuranceRegulation</span></div>
-    <span class="more" data-t="cap-p5">&hellip;see more</span>
-    <div class="media"><div class="smock"><div class="smock-chip">Creative in production &middot; Static</div><div class="smock-line">&ldquo;None of these developments made industry headlines. All of them changed something about how a compliant file needs to be built.&rdquo;</div><div class="smock-brand">Aspen Claims Service</div></div></div>
-    <div class="acts">
-      <span class="act">&#128077; Like</span><span class="act">&#128172; Comment</span><span class="act">&#128257; Repost</span><span class="act">&#10148; Send</span>
-    </div>
-  </div>
-  <div class="review"><div class="rnote">&#9998; Static still not delivered &mdash; placeholder carries the approved copy line. The three regulatory items are stated as guidance rather than cited law; verify each against source before this runs.</div></div>
 </div>
 
 <div class="post-wrap" id="p6">
-  <div class="datechip"><span class="dc-date">Wed · 26 Aug</span><span class="dc-kind">Static · &ldquo;We&#x27;ll get back to you&rdquo; — corrected creative</span></div>
+  <div class="datechip"><span class="dc-date">Wed · 26 Aug</span><span class="dc-kind">Static · &ldquo;We&#x27;ll get back to you&rdquo;</span></div>
   <div class="card">
     <div class="head"><div class="av av-aspen"><svg viewBox="0 0 36 36"><circle cx="18" cy="18" r="17" fill="#0e1b12" stroke="#5F9828" stroke-width="2"/><path d="M8 24 L16 11 L21 18 L24 14 L28 24 Z" fill="#5F9828"/></svg></div>
       <div class="who"><span class="nm">Aspen Claims Service</span><span class="tg">Property Claims Services</span><span class="tm">Scheduled &middot; 26 Aug &#127760;</span></div>
@@ -389,31 +250,7 @@ The claims operations winning on satisfaction scores right now aren't necessaril
       <span class="act">&#128077; Like</span><span class="act">&#128172; Comment</span><span class="act">&#128257; Repost</span><span class="act">&#10148; Send</span>
     </div>
   </div>
-  <div class="review"><div class="rnote good">&#10003; Corrected and redelivered. The subline now reads &ldquo;Four words that quietly do more damage than most operations realize&rdquo; &mdash; the regulatory line that was sitting here has been removed.</div></div>
 </div>
-
-<div class="post-wrap" id="p7">
-  <div class="datechip"><span class="dc-date">Fri · 28 Aug</span><span class="dc-kind">Video · Mark VO (~75s) — creative in production (AI voiceover)</span></div>
-  <div class="card">
-    <div class="head"><img class="av" src="assets/mark_avatar.jpg" alt="Mark Vetrovec"/>
-      <div class="who"><span class="nm">Mark Vetrovec</span><span class="tg">CEO, Aspen Claims Service</span><span class="tm">Scheduled &middot; 28 Aug &#127760;</span></div>
-      <div class="fol">+ Follow</div>
-    </div>
-    <div class="cap clamp" id="cap-p7">A short one from Mark on the questions coming out of carrier board conversations this year — and what they say about where the industry is heading.
-
-&#128266; Sound on.
-
-<span class="tag">#ClaimsWithAspen</span> <span class="tag">#AspenVoices</span> <span class="tag">#ClaimsLeadership</span></div>
-    <span class="more" data-t="cap-p7">&hellip;see more</span>
-    <div class="media vmock"><div class="vmock-chip">Creative in production · AI voiceover</div><div class="vmock-face"><img src="assets/mark_avatar.jpg" alt=""/></div><div class="vmock-wave"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="vmock-overlay">&ldquo;Boards are starting to ask about numbers that don&#x27;t fit on existing dashboards.&rdquo;<small>Mark Vetrovec · Aspen Claims Service</small></div></div>
-    <div class="acts">
-      <span class="act">&#128077; Like</span><span class="act">&#128172; Comment</span><span class="act">&#128257; Repost</span><span class="act">&#10148; Send</span>
-    </div>
-  </div>
-  <div class="review"><div class="rnote">&#9998; Video not yet produced &mdash; placeholder shows the approved visual direction. The three board questions (competitiveness, measuring trust, claims succession) are ready to record; ~75s script sits in the calendar.</div></div>
-</div>
-
-<div class="wkmark"><span>Week 3</span><i></i></div>
 
 <div class="post-wrap" id="p8">
   <div class="datechip"><span class="dc-date">Mon · 31 Aug</span><span class="dc-kind">Static · The complaint that never gets filed</span></div>
@@ -469,7 +306,6 @@ Part 01: The moment a coverage decision actually gets made.
       <span class="act">&#128077; Like</span><span class="act">&#128172; Comment</span><span class="act">&#128257; Repost</span><span class="act">&#10148; Send</span>
     </div>
   </div>
-  <div class="review"><div class="rnote">&#9998; Series handoff: this is the post Part 05 refers to as &ldquo;next week.&rdquo; If the finale caption isn&rsquo;t softened, this is the one to move forward instead.</div></div>
 </div>
 
 <div class="post-wrap" id="p10">
@@ -501,8 +337,6 @@ The technology matters. The way it's talked about tells you whether it's actuall
     </div>
   </div>
 </div>
-
-<div class="wkmark"><span>Week 4</span><i></i></div>
 
 <div class="post-wrap" id="p11">
   <div class="datechip"><span class="dc-date">Mon · 7 Sep</span><span class="dc-kind">Long-form article · Mark&#x27;s profile</span></div>
@@ -584,105 +418,8 @@ CEO, Aspen Claims Service</div>
   </div>
 </div>
 
-<div class="post-wrap" id="p12">
-  <div class="datechip"><span class="dc-date">Wed · 9 Sep</span><span class="dc-kind">Video · Brent VO (~75s) — creative in production (AI voiceover)</span></div>
-  <div class="card">
-    <div class="head"><div class="av av-init">BM</div>
-      <div class="who"><span class="nm">Brent Morrow</span><span class="tg">Operations Manager, Aspen Claims Service</span><span class="tm">Scheduled &middot; 9 Sep &#127760;</span></div>
-      <div class="fol">+ Follow</div>
-    </div>
-    <div class="cap clamp" id="cap-p12">A short one from Brent on something he says often in internal conversations — and rarely says publicly. Worth putting on record.
-
-&#128266; Sound on.
-
-<span class="tag">#ClaimsWithAspen</span> <span class="tag">#AspenVoices</span> <span class="tag">#FieldOperations</span></div>
-    <span class="more" data-t="cap-p12">&hellip;see more</span>
-    <div class="media vmock"><div class="vmock-chip">Creative in production · AI voiceover</div><div class="vmock-face"><span>BM</span></div><div class="vmock-wave"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="vmock-overlay">&ldquo;The field adjusters working your claims are usually the most experienced professionals in your entire claims lifecycle.&rdquo;<small>Brent Morrow · Operations Manager · Aspen Claims</small></div></div>
-    <div class="acts">
-      <span class="act">&#128077; Like</span><span class="act">&#128172; Comment</span><span class="act">&#128257; Repost</span><span class="act">&#10148; Send</span>
-    </div>
-  </div>
-  <div class="review"><div class="rnote">&#9998; Video not yet produced &mdash; placeholder shows the approved visual direction. Full ~75s VO script is in the calendar, ready for recording.</div></div>
 </div>
-
-<div class="post-wrap" id="s1">
-  <div class="datechip"><span class="dc-date">Fri · 11 Sep</span><span class="dc-kind">Static · September Post 1 — the 90-day CAT read</span></div>
-  <div class="card">
-    <div class="head"><div class="av av-aspen"><svg viewBox="0 0 36 36"><circle cx="18" cy="18" r="17" fill="#0e1b12" stroke="#5F9828" stroke-width="2"/><path d="M8 24 L16 11 L21 18 L24 14 L28 24 Z" fill="#5F9828"/></svg></div>
-      <div class="who"><span class="nm">Aspen Claims Service</span><span class="tg">Property Claims Services</span><span class="tm">Scheduled &middot; 11 Sep &#127760;</span></div>
-      <div class="fol">+ Follow</div>
-    </div>
-    <div class="cap clamp" id="cap-s1">The most useful CAT deployment metric doesn't get its full read until 90 days after the event closes.
-
-Cycle time during the deployment tells one story. Supplement volume in the 30, 60, and 90-day windows after closure tells a different one — and the two stories often contradict each other.
-
-The pattern most common in post-event data:
-
-Files closed fastest during the deployment produce the highest supplement rates in the 60-day window.
-
-Vendors ranked highest on cycle time often rank differently when 90-day supplement volume is included in the ranking.
-
-The total cost of a CAT deployment isn't calculable until this window has passed.
-
-Most carrier CAT reporting stops when the deployment closes. The post-event report gets filed, the team moves on, and the supplement volume that shows up in the following weeks gets absorbed into general quarterly numbers — disconnected from the deployment that produced it.
-
-The carriers who understand their real CAT performance are the ones who keep tracking specific event-linked supplement volume through the 90-day window. It's a small change in reporting discipline. It produces a materially more honest picture of which vendors and which operational choices actually worked.
-
-Worth adding to this year's post-mortem before the data starts to blur.
-
-<span class="tag">#ClaimsWithAspen</span> <span class="tag">#ClaimsIntelligence</span> <span class="tag">#CATResponse</span></div>
-    <span class="more" data-t="cap-s1">&hellip;see more</span>
-    <div class="media"><div class="smock"><div class="smock-chip">Not yet delivered &middot; Static</div><div class="smock-line">&ldquo;The most useful CAT metric doesn&rsquo;t get its full read until 90 days after the event closes.&rdquo;</div><div class="smock-brand">Aspen Claims Service</div></div></div>
-    <div class="acts">
-      <span class="act">&#128077; Like</span><span class="act">&#128172; Comment</span><span class="act">&#128257; Repost</span><span class="act">&#10148; Send</span>
-    </div>
-  </div>
-  <div class="review"><div class="rnote">&#9998; New in this version &mdash; creative not yet briefed. Also note the three bullets are stated as established patterns in post-event data with no source attached; the safest read is to frame them as what Aspen sees rather than as industry fact.</div></div>
-</div>
-
-<div class="wkmark"><span>Week 5</span><i></i></div>
-
-<div class="post-wrap" id="s2">
-  <div class="datechip"><span class="dc-date">Mon · 14 Sep</span><span class="dc-kind">Carousel · September Post 2 — Behind the File, Part 02</span></div>
-  <div class="card">
-    <div class="head"><div class="av av-aspen"><svg viewBox="0 0 36 36"><circle cx="18" cy="18" r="17" fill="#0e1b12" stroke="#5F9828" stroke-width="2"/><path d="M8 24 L16 11 L21 18 L24 14 L28 24 Z" fill="#5F9828"/></svg></div>
-      <div class="who"><span class="nm">Aspen Claims Service</span><span class="tg">Property Claims Services</span><span class="tm">Scheduled &middot; 14 Sep &#127760;</span></div>
-      <div class="fol">+ Follow</div>
-    </div>
-    <div class="cap clamp" id="cap-s2">Part 02 of Behind the File.
-
-Every claim has a moment where the adjuster's read and the policyholder's expectation don't line up. How that moment gets handled decides more about the file than most people outside claims realize.
-
-<span class="tag">#ClaimsWithAspen</span> <span class="tag">#BehindTheFile</span> <span class="tag">#ClaimsOperations</span></div>
-    <span class="more" data-t="cap-s2">&hellip;see more</span>
-    <div class="media carousel" data-n="6">
-      <div class="cfr on" data-i="0"><div class="fmock"><div class="fmock-chip">Copy approved &middot; creative pending</div><div class="fmock-no">Frame 1</div><div class="fmock-h">Behind the File &middot; Part 02</div><div class="fmock-b"><b>What happens when the adjuster disagrees with the policyholder.</b></div><div class="fmock-brand">Aspen Claims Service</div></div></div>
-      <div class="cfr" data-i="1"><div class="fmock"><div class="fmock-chip">Copy approved &middot; creative pending</div><div class="fmock-no">Frame 2</div><div class="fmock-h">The moment. Every claim has one.</div><div class="fmock-b">The adjuster sees the damage one way, but the policyholder sees it another.
-
-How this moment gets handled decides more than most people realize.</div><div class="fmock-brand">Aspen Claims Service</div></div></div>
-      <div class="cfr" data-i="2"><div class="fmock"><div class="fmock-chip">Copy approved &middot; creative pending</div><div class="fmock-no">Frame 3</div><div class="fmock-h">What do strong adjusters do? They slow down.</div><div class="fmock-b">They listen fully and explain clearly. Document both views — what the policyholder observed, what the adjuster observed, and why they differ.
-
-Slowing down here saves weeks of disputes later.</div><div class="fmock-brand">Aspen Claims Service</div></div></div>
-      <div class="cfr" data-i="3"><div class="fmock"><div class="fmock-chip">Copy approved &middot; creative pending</div><div class="fmock-no">Frame 4</div><div class="fmock-h">What do the weak ones do? They defend, or they concede.</div><div class="fmock-b">Defending turns it adversarial. Conceding creates supplements six months later.
-
-Neither respects the policyholder or protects the file.</div><div class="fmock-brand">Aspen Claims Service</div></div></div>
-      <div class="cfr" data-i="4"><div class="fmock"><div class="fmock-chip">Copy approved &middot; creative pending</div><div class="fmock-no">Frame 5</div><div class="fmock-h">Why documentation matters most here</div><div class="fmock-b">A file that documents the reasoning behind the disagreement, and not just the outcome, is the one that holds up.</div><div class="fmock-brand">Aspen Claims Service</div></div></div>
-      <div class="cfr" data-i="5"><div class="fmock"><div class="fmock-chip">Copy approved &middot; creative pending</div><div class="fmock-no">Frame 6</div><div class="fmock-h">Closing</div><div class="fmock-b"><b>The best adjusters treat disagreement as data, and not conflict.</b>
-
-That's the difference between a file that closes cleanly and one that comes back.
-
-Stay tuned for the rest of the series.</div><div class="fmock-brand">Aspen Claims Service</div></div></div>
-      <button class="cnav prev" aria-label="previous">&#10094;</button><button class="cnav next" aria-label="next">&#10095;</button><span class="ccount">1/6</span><div class="cdots"><span class="dot on" data-i="0"></span><span class="dot" data-i="1"></span><span class="dot" data-i="2"></span><span class="dot" data-i="3"></span><span class="dot" data-i="4"></span><span class="dot" data-i="5"></span></div>
-    </div>
-    <div class="acts">
-      <span class="act">&#128077; Like</span><span class="act">&#128172; Comment</span><span class="act">&#128257; Repost</span><span class="act">&#10148; Send</span>
-    </div>
-  </div>
-  <div class="review"><div class="rnote">&#9998; New in this version &mdash; frames below are the approved copy set out for review; the designed carousel hasn&rsquo;t been produced yet. Frames 3 and 4 are written as questions (&ldquo;What do strong adjusters do?&rdquo;) where Part 01 used statements &mdash; worth matching the two for series consistency.</div></div>
-</div>
-
-</div>
-<div class="footer">Prepared by Damco Digital for Aspen Claims Service &middot; 18 Aug &ndash; 14 Sep 2026 run<br/>Review page only &mdash; nothing here is live. Creatives are final production files where delivered; captions verbatim from the updated calendar.</div>
+<div class="footer">Prepared by Damco Digital for Aspen Claims Service &middot; 18 Aug &ndash; 7 Sep 2026 run<br/>Review page only &mdash; nothing here is live. Captions verbatim from the calendar.</div>
 <script>
 document.querySelectorAll(".more").forEach(function(m){
   var c=document.getElementById(m.dataset.t);
